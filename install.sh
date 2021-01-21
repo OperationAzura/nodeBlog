@@ -81,5 +81,12 @@ mkdir -p securityCams/CarPort
 mkdir -p securityCams/FrontDoor
 mkdir -p securityCams/cmpVids
 
+#get ffmpeg for encoding videos
+snap install ffmpeg;
+#get pip
+apt-get install python3-pip -y;
+
+#get numpy for python
+pip install numpy;
 ##move video encoding scripts for security cameras
 cp ~/projects/videoCompressor/cmpVids.py ~/securityCams/cmpVids.py
